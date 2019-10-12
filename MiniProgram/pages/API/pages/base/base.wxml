@@ -1,0 +1,12 @@
+<!--pages/API/pages/base/base.wxml-->
+<text>pages/API/pages/base/base.wxml</text>
+  <view>
+  <button bindtap="canIUse">boolean:wx.canIUse(string)</button>
+  <button bindtap="getSystemInfoSync">Object:wx.getSystemInfoSync()</button>
+  <button bindtap="getSystemInfo">wx.getSystemInfo(Object object)</button>
+  <button bindtap="getLaunchOptionsSync">Object:wx.getLaunchOptionsSync()</button>
+  <button bindtap="setEnableDebug">wx.setEnableDebug(Object object)</button>
+  <button bindtap="console">console</button>
+  <button bindtap="setTimeout">number:setTimeout(function callback, number)</button>
+  <button bindtap="setInterval">number:setInterval(function callback, number)</button>
+  </view>

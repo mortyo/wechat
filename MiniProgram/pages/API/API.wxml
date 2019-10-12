@@ -1,0 +1,21 @@
+<!--pages/API/API.wxml-->
+<text>/pages/API/API.wxml</text>
+<view>
+  <button bindtap="base">基础</button>  
+  <button bindtap="route">路由</button>  
+  <button bindtap="ui">界面</button>  
+  <button bindtap="network">网络</button>  
+  <button bindtap="storage">数据缓存</button>  
+  <button bindtap="media">媒体</button>  
+  <button bindtap="location">位置</button>  
+  <button bindtap="share">转发</button>  
+  <button bindtap="canvas">画布</button>  
+  <button bindtap="file">文件</button>  
+  <button bindtap="openAPI">开放接口</button>  
+  <button bindtap="device">设备</button>  
+  <button bindtap="Worker">Worker</button>  
+  <button bindtap="third-party_platform">第三方平台</button>  
+  <button bindtap="wxml">WXML</button>  
+  <button bindtap="ad">广告</button>  
+</view>
+

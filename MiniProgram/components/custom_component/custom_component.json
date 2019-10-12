@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "son_component": "/components/son_component/son_component"
+  }
+}

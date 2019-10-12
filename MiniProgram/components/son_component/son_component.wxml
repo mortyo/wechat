@@ -1,0 +1,4 @@
+<!--components/son_component/son_component.wxml-->
+<text>我是子组件：son_component</text>
+<view>data:{{name}}</view>
+<view>money:{{money}}</view>

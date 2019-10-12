@@ -1,0 +1,92 @@
+<!--pages/components.wxml-->
+<text>/pages/components/components.wxml</text>
+<text>基础内容</text>
+<view>
+  <icon type="success" size="30" color=""></icon>
+  <icon type="success" size="40" color="red"></icon>
+  <icon type="success" size="50" color="yellow"></icon>
+</view>
+<view>
+  <progress percent="60" show-info="true"></progress>
+  <progress percent="70" show-info="true" color="red"></progress>
+</view>
+<text>表单组件</text>
+<view>
+  <button type="" size="">按钮</button>
+  <button type="primary" size="mini">按钮</button>
+  <button type="warn" plain="true">按钮</button>
+  <button loading="true">按钮</button>
+</view>
+<view>
+    <checkbox-group bindchange="change">
+      <checkbox value="apple" id="apple">apple</checkbox>
+      <checkbox value="mango" id="mango">mango</checkbox>
+    </checkbox-group>
+    <text>checked:{{fruits}}不像vue能监听data：fruits</text>
+</view>
+<view>
+  <!-- <editor placeholder="请输入文字"></editor> -->
+</view>
+<view>
+  <form bindsubmit="form_submit" bindreset="form_reset">
+    <view>switch:<switch name="switch"></switch></view>
+    <view>slider:<slider name="slider" show-value></slider></view>
+    <view> input:<input name="input" placeholder="请输入"></input></view>
+    <view>radio:
+      <radio-group name="radio-group">
+        <label><radio value="nina"></radio>nina</label>
+        <label><radio value="morty"></radio>morty</label>
+      </radio-group>
+    </view>
+    <view>checkbox:
+      <checkbox-group name="checkbox-group">
+        <label><checkbox value="nina_c"></checkbox>nina_c</label>
+        <label><checkbox value="morty_c"></checkbox>morty_c</label>
+      </checkbox-group>
+    </view>
+    <button form-type="submit">submit</button>
+    <button form-type="reset">reset</button>
+  </form>
+</view>
+<view>
+  <!-- value:从第0个开始，range：范围，选定数组skill -->
+  <picker bindchange="picker_change" value="0" range="{{skill}}">{{skill[0]}}</picker> 
+</view>
+<view>
+  <navigator url="/pages/API/API">跳转到新页面：API</navigator>
+  <navigator url="/pages/server/server" open-type="redirect" hover-class="other-navigator-hover">当前页面打开：server</navigator>
+  <!-- <navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover">切换Tab：index</navigator> -->
+</view>
+<text>媒体组件</text>
+<view>
+  <audio poster="{{poster}}" name="{{song_name}}" author="{{author}}" src="{{song_src}}" id="myaudio" controls ="false" loop="false"></audio>
+  <button type="primary" bindtap="song_play">播放</button>
+  <button type="primary" bindtap="song_pause">暂停</button>
+  <button type="primary" bindtap="song_to10">10s播放</button>
+  <button type="primary" bindtap="song_toStart">从头播放</button>
+</view>
+<view>
+  <!-- <camera device-position="back" flash="off" binderror="error" ></camera>
+  <button type="warn" size="mini" bindtap="take_photo">拍照</button>
+  <image src="{{src}}"></image> -->
+</view>
+<view>
+  <image style="width:200px;height:80px" src="https://mortyomo.github.io/images/logo.png"></image>
+</view>
+<view>
+  <view>拍摄视频：</view>
+  <video src="{{video_src}}" controls="true" style="width:100%"></video>
+  <button bindtap="get_video">拍摄视频</button>
+  <view>视频弹幕：</view>
+  <video id="myvideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls enable-danmu danmu-btn style="width:100%"></video>
+  <input bindblur="input_danmu" placeholder="点击这里输入弹幕"></input>
+  <button bindtap="send_danmu">发送弹幕</button>
+</view>
+<view>
+  地图：
+  <map id="mymap" longitude="113" latitude="23" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location="true"  style="width:100%"></map>
+</view>
+<view>
+画布：
+<canvas canvas-id="mycanvas" style="width:100%;heigh:400px;"></canvas>
+</view>

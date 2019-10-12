@@ -1,0 +1,11 @@
+<!--components/custom_component/custom_component.wxml-->
+<text>我是自定义组件：custom_component</text>
+<view><slot></slot></view>
+<view>data:{{name}}</view>
+<view>money:{{money}}</view>
+<view>age:{{age}}</view>
+<view><button bindtap="set_data">methods</button></view>
+<view><button bindtap="click">behavior</button></view>
+子组件son_component如下：
+<view><son_component></son_component></view>
+

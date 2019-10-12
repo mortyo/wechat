@@ -1,0 +1,12 @@
+<!--pages/WeUI/WeUI.wxml-->
+<text>pages/WeUI/WeUI.wxml</text>
+<view>
+  <custom_component>组件内slot(插槽)插入的内容</custom_component>
+</view>
+基础组件：
+<view>
+  <mp-badge ext-class="blue"></mp-badge>
+  <mp-badge content="99+"></mp-badge>
+  <button bindtap="show">显示gallery</button>
+  <mp-gallery show="{{show}}" bindchange="change" binddelete="delete" bindhide="hide" img-urls="{{imgUrls}}" delete hide-on-click="{{true}}" current="0"></mp-gallery>
+</view>

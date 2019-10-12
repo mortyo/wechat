@@ -1,0 +1,9 @@
+<!--pages/API/pages/ui/ui.wxml-->
+<text>pages/API/pages/ui/ui.wxml</text>
+<button bindtap="showToast">wx.showToast(Object)</button>
+<button bindtap="showModal">wx.showModal(Object)</button>
+<button bindtap="showLoading">wx.showLoading(Object)</button>
+<button bindtap="showActionSheet">wx.showActionSheet(Object)</button>
+<button bindtap="hideToast">wx.hideToast(Object)</button>
+<button bindtap="hideLoading">wx.hideLoading(Object)</button>
+

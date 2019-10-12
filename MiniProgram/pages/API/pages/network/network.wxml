@@ -1,0 +1,9 @@
+<!--pages/API/pages/network/network.wxml-->
+<text>pages/API/pages/network/network.wxml</text>
+<button bindtap="getLocation">getLocation</button>
+<map longitude="113.87777709960938" latitude="22.552448272705078" style="width:100%"></map>
+<button bindtap="scan">scan</button>
+<view wx:if="{{show}}">showwwwwwwwwwwwwww:{{show}}</view>
+<view wx:for="{{array}}">
+  {{index}}:{{item}}
+</view>

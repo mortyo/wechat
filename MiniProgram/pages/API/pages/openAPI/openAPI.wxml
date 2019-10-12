@@ -1,0 +1,8 @@
+<!--pages/API/pages/openAPI/openAPI.wxml-->
+<text>pages/API/pages/openAPI/openAPI.wxml</text>
+<button bindtap="login">登录</button>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view>
+<button bindtap="requestPayment">支付</button>

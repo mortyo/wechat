@@ -1,0 +1,6 @@
+<!--index.wxml-->
+  <view>
+    <button bindtap="component_tap">组件</button>
+    <button bindtap="API_tap">API</button>
+    <button bindtap="server_side">服务端</button>
+  </view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "custom_component":"/components/custom_component/custom_component",
+    "mp-dialog":"/components/weui/dialog/dialog",
+    "mp-badge":"/components/weui/badge/badge",
+    "mp-gallery":"/components/weui/gallery/gallery"
+  }
+}
